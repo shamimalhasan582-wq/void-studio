@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Void Studio — Digital Agency</title>
+  <meta name="description" content="Void Studio is a minimal digital agency crafting purposeful brands, immersive digital experiences, and scalable products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">VOID<span>.</span></a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link nav-cta">Let's Talk</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#contact" class="mobile-link">Let's Talk</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Digital Agency — Est. 2024</div>
+      <h1 class="hero-title">
+        <span class="line" data-text="We Design">We Design</span>
+        <span class="line italic" data-text="Digital">Digital</span>
+        <span class="line" data-text="Futures.">Futures.</span>
+      </h1>
+      <p class="hero-sub">
+        Strategy-led. Craft-focused.<br />
+        We build brands and experiences that outlast trends.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View Our Work</a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-marquee-wrap">
+      <div class="hero-marquee">
+        <span>Branding</span><span class="dot">·</span>
+        <span>Web Design</span><span class="dot">·</span>
+        <span>Motion</span><span class="dot">·</span>
+        <span>Strategy</span><span class="dot">·</span>
+        <span>Development</span><span class="dot">·</span>
+        <span>Identity</span><span class="dot">·</span>
+        <span>Branding</span><span class="dot">·</span>
+        <span>Web Design</span><span class="dot">·</span>
+        <span>Motion</span><span class="dot">·</span>
+        <span>Strategy</span><span class="dot">·</span>
+        <span>Development</span><span class="dot">·</span>
+        <span>Identity</span><span class="dot">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats">
+    <div class="stat-item">
+      <span class="stat-num" data-target="120">0</span><span class="stat-plus">+</span>
+      <p>Projects Delivered</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="48">0</span><span class="stat-plus">+</span>
+      <p>Global Clients</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+      <p>Years of Craft</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="12">0</span>
+      <p>Awards Won</p>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <div class="section-tag">Selected Work</div>
+      <h2 class="section-title">What We've Built</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card project-large" id="proj-1">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);">
+            <div class="project-mock">
+              <div class="mock-bar">
+                <div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div>
+              </div>
+              <div class="mock-content">
+                <div class="mock-line w80"></div>
+                <div class="mock-line w50"></div>
+                <div class="mock-line w65 accent"></div>
+              </div>
+              <div class="mock-hero-block"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-tag">Branding</span>
+            <span class="project-tag">Web</span>
+          </div>
+          <h3 class="project-title">Aether Finance</h3>
+          <p class="project-desc">A complete digital overhaul for a fintech startup — from identity to product.</p>
+          <a href="#" class="project-link" aria-label="View Aether Finance project">
+            <span>View Case Study</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" id="proj-2">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #0d0d0d 0%, #1e0a2e 60%, #2d1b4e 100%);">
+            <div class="project-mock">
+              <div class="mock-circle"></div>
+              <div class="mock-lines">
+                <div class="mock-line w70"></div>
+                <div class="mock-line w45"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-tag">Identity</span>
+          </div>
+          <h3 class="project-title">Lumina Studio</h3>
+          <p class="project-desc">Visual identity for a modern photography collective.</p>
+          <a href="#" class="project-link" aria-label="View Lumina Studio project">
+            <span>View Case Study</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" id="proj-3">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #080808 0%, #0a1628 60%, #0d2137 100%);">
+            <div class="project-mock">
+              <div class="mock-grid">
+                <div class="mock-cell"></div>
+                <div class="mock-cell accent-cell"></div>
+                <div class="mock-cell"></div>
+                <div class="mock-cell"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-tag">Development</span>
+            <span class="project-tag">Motion</span>
+          </div>
+          <h3 class="project-title">Nexus Platform</h3>
+          <p class="project-desc">Interactive SaaS dashboard with real-time data visualization.</p>
+          <a href="#" class="project-link" aria-label="View Nexus Platform project">
+            <span>View Case Study</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card project-wide" id="proj-4">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a120a 60%, #2a1a0d 100%);">
+            <div class="project-mock horizontal">
+              <div class="mock-sidebar">
+                <div class="mock-line w80"></div>
+                <div class="mock-line w60"></div>
+                <div class="mock-line w70"></div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-hero-block sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-tag">Strategy</span>
+            <span class="project-tag">Branding</span>
+          </div>
+          <h3 class="project-title">Terra Organics</h3>
+          <p class="project-desc">Brand strategy and e-commerce experience for an organic food label entering new markets.</p>
+          <a href="#" class="project-link" aria-label="View Terra Organics project">
+            <span>View Case Study</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="work-cta">
+      <a href="#" class="btn btn-outline">See All Projects →</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Our Expertise</h2>
+    </div>
+
+    <div class="services-list">
+      <div class="service-item" data-num="01">
+        <div class="service-left">
+          <h3 class="service-name">Brand Strategy</h3>
+          <p class="service-desc">We define the why behind your brand — positioning, voice, and the narrative that moves people.</p>
+        </div>
+        <div class="service-right">
+          <ul class="service-tags">
+            <li>Positioning</li>
+            <li>Messaging</li>
+            <li>Competitor Analysis</li>
+            <li>Brand Audits</li>
+          </ul>
+        </div>
+        <div class="service-arrow">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <div class="service-item" data-num="02">
+        <div class="service-left">
+          <h3 class="service-name">Visual Identity</h3>
+          <p class="service-desc">Logos, typography, color systems, and brand books that establish an unforgettable presence.</p>
+        </div>
+        <div class="service-right">
+          <ul class="service-tags">
+            <li>Logo Design</li>
+            <li>Typography</li>
+            <li>Color Systems</li>
+            <li>Brand Guidelines</li>
+          </ul>
+        </div>
+        <div class="service-arrow">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <div class="service-item" data-num="03">
+        <div class="service-left">
+          <h3 class="service-name">Web Design & Dev</h3>
+          <p class="service-desc">Pixel-perfect websites and web apps built for performance, accessibility, and conversion.</p>
+        </div>
+        <div class="service-right">
+          <ul class="service-tags">
+            <li>UI/UX Design</li>
+            <li>Frontend Dev</li>
+            <li>CMS Integration</li>
+            <li>E-commerce</li>
+          </ul>
+        </div>
+        <div class="service-arrow">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <div class="service-item" data-num="04">
+        <div class="service-left">
+          <h3 class="service-name">Motion & 3D</h3>
+          <p class="service-desc">Animation, UI motion, and 3D experiences that breathe life into your digital touchpoints.</p>
+        </div>
+        <div class="service-right">
+          <ul class="service-tags">
+            <li>UI Animation</li>
+            <li>Brand Films</li>
+            <li>3D Renders</li>
+            <li>Interactive Art</li>
+          </ul>
+        </div>
+        <div class="service-arrow">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Philosophy -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="section-tag">Our Philosophy</div>
+      <h2 class="about-title">Minimal doesn't mean<br /><em>less</em> — it means <em>precise.</em></h2>
+      <p class="about-body">
+        At Void Studio, we strip away everything that isn't essential. Every pixel, every word, every interaction is intentional. We believe the most powerful designs are those that know exactly what to leave out.
+      </p>
+      <p class="about-body">
+        We're a small team of strategists, designers, and engineers who care deeply about craft. We take on a limited number of projects each year so we can give each one our full attention.
+      </p>
+    </div>
+    <div class="about-visual">
+      <div class="about-orb"></div>
+      <div class="about-grid-lines"></div>
+      <div class="about-quote">
+        <span class="quote-mark">"</span>
+        Design is not just what it looks like.<br />Design is how it works.
+        <span class="quote-attr">— Steve Jobs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-tag" style="text-align:center; margin-bottom: 3rem;">Client Love</div>
+    <div class="testimonials-track" id="testimonials-track">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Void transformed our entire digital presence. The results were beyond what we imagined — and delivered on time."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: #c8ff00;">A</div>
+          <div>
+            <strong>Alex Morgan</strong>
+            <span>CEO, Aether Finance</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Their attention to detail is unmatched. They didn't just design our brand — they gave it a soul."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: #7c3aed;">L</div>
+          <div>
+            <strong>Lena Kovacs</strong>
+            <span>Founder, Lumina Studio</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Working with Void felt collaborative and intentional. Our users love the new experience we shipped together."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: #06b6d4;">R</div>
+          <div>
+            <strong>Ryan Patel</strong>
+            <span>Product Lead, Nexus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button class="testi-btn" id="testi-prev" aria-label="Previous testimonial">←</button>
+      <div class="testi-dots" id="testi-dots">
+        <button class="dot-btn active" data-index="0"></button>
+        <button class="dot-btn" data-index="1"></button>
+        <button class="dot-btn" data-index="2"></button>
+      </div>
+      <button class="testi-btn" id="testi-next" aria-label="Next testimonial">→</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="contact-title">Ready to build<br />something great?</h2>
+      <p class="contact-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Alex Johnson" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select a service</option>
+            <option value="brand">Brand Strategy</option>
+            <option value="identity">Visual Identity</option>
+            <option value="web">Web Design & Dev</option>
+            <option value="motion">Motion & 3D</option>
+            <option value="full">Full Project</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+          <span>Send Message</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">VOID<span>.</span></a>
+        <p>Crafting purposeful digital experiences for brands that want to leave a mark.</p>
+      </div>
+      <div class="footer-links-group">
+        <h4>Agency</h4>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Connect</h4>
+        <a href="#">Twitter / X</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Contact</h4>
+        <a href="mailto:hello@voidstudio.io">hello@voidstudio.io</a>
+        <a href="#">+1 (555) 000-1234</a>
+        <a href="#">San Francisco, CA</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Void Studio. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
